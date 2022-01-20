@@ -1,0 +1,132 @@
+button, div {
+    border: none;
+    background-color:rgba(0, 0, 0, 0);
+    padding: 0;
+    min-height: 100px;
+}
+
+button:hover {
+    background-color:rgba(255, 255, 255, 0.2);
+}
+
+button:active {
+    background-color:rgba(0, 0, 0, 0.2);
+}
+
+#lowerscreen, #upperscreen {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 50px;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+#upperscreen {
+    font-size: 25px;
+}
+
+body {
+    background-color: #000000;
+}
+
+#calculator {
+    height: 700px;
+    width: 400px;
+    padding: 100px;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-areas: 
+        'upperscreen upperscreen upperscreen upperscreen'
+        'lowerscreen lowerscreen lowerscreen lowerscreen'
+        'clear clear clear divide'
+        'seven eight nine multiply'
+        'four five six minus'
+        'one two three plus'
+        'zero zero decimal equals';
+    background-image: url('calculator.png');
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 300px);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#upperscreen {
+    grid-area: upperscreen;
+}
+
+#lowerscreen {
+    grid-area: lowerscreen;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#equals {
+    grid-area: equals;
+}
